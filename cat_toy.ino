@@ -1,3 +1,9 @@
+/* This code is for a "peek-a-boo" style cat toy. The circuit uses an ultrasonic sensor with distance function. When the cat, or any object, 
+is detected within 6 inches of the sensor, mounted at the top of a doorway on one side of a box, a toy attached to a servo motor swings
+to appear in the doorway. If the cat moves within 3 inches of the doorway, the toy "hides" by swinging 90 degrees to a solid wall. 
+The first prototype of the toy built to run this code utilized the SparkFun Electronics Inventors' kit with Qwiic RedBoard microcontroller.
+Code made possible by the developers at Arduino and their forums.*/
+
 #include <Servo.h>            //include the servo library
 
 const int trigPin1 = 6;   //connects to the trigger pin on US sensor 1
